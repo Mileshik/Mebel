@@ -1,0 +1,26 @@
+{% extends 'mebel/base.html' %}
+
+{% block content %}
+					<div class="blog-post-area">
+						<h2 class="title text-center">Відгуки</h2>
+						{% for blog in blogs %}
+						<div class="single-blog-post">
+							<h3>{{blog.title}}</h3>
+							<div class="post-meta">
+								<ul>
+									<li><i class="fa fa-user"></i>{{blog.user}}</li>
+									<li><i class="fa fa-calendar"></i>{{blog.published_date}}</li>
+								</ul>
+							</div>
+							<a href="">
+								<img src="{{blog.poster}}" alt="">
+							</a>
+							<p>{{blog.content}}</p>
+
+						</div>
+
+						{% endfor %}
+
+
+
+{% endblock %}
