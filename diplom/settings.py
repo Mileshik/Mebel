@@ -125,4 +125,5 @@ STATICFILES_DIRS = [
 LOGIN_REDIRECT_URL = 'index'
 LOGIN_URL = 'mebel_login'
 LOGOUT_URL = 'mebel_logout'
+STATIC_ROOT = ""
 
